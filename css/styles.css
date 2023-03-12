@@ -47,7 +47,6 @@ p {
   margin-left: auto;
   margin-right: auto;
   outline: 2px solid transparent;
-  max-width: 1158px;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
@@ -245,16 +244,19 @@ p {
   text-align: center;
   padding-top: 112px;
   padding-bottom: 240px;
+
 }
 
 .hero-title {
-  width: 496px;
+  width: 100%;
+  max-width: 320px;
   font-family: "Roboto", sans-serif;
-  font-size: 56px;
+  font-size: 36px;
   line-height: 1em;
   color: var(--hero-title-color);
   margin: auto;
   text-align: center;
+  
 }
 
 .hero-btn {
@@ -1170,7 +1172,7 @@ background-color: var(--accent-color);
 
 @media srceen and (min-width:480px){
   .container{
-    max-width: 428px;
+    max-width: 448px;
   }
   
 }
@@ -1179,6 +1181,23 @@ background-color: var(--accent-color);
   .container {
     max-width: 736px;
   }
+    .hero-section{
+      padding-top: 112px;
+      padding-bottom: 204px;
+    }
+
+     .hero-title {
+       width: 100%;
+       max-width: 496px;
+       font-family: "Roboto", sans-serif;
+       font-size: 56px;
+       line-height: 1em;
+       color: var(--hero-title-color);
+       margin: auto;
+       text-align: center;
+  
+     }
+
   .feature-list .title{
     text-align: unset;
   }
@@ -1212,6 +1231,11 @@ background-color: var(--accent-color);
   .section{
     padding-top: 120px;
     padding-bottom: 120px;
+  }
+
+  .hero-section{
+    padding-top: 188px;
+      padding-bottom: 292px;
   }
 
   .container{
