@@ -234,7 +234,7 @@ p {
   background-image: linear-gradient(to right,
       rgba(0, 0, 0, 0.7),
       rgba(46, 47, 66, 0.7)),
-    url(../images/people-officefinal.jpg);
+    url(../images/people-office-final-mob.jpg);
 
   background-repeat: no-repeat;
   background-position: center;
@@ -245,6 +245,14 @@ p {
   padding-top: 112px;
   padding-bottom: 240px;
 
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .hero-section {
+    background-image: url(../images/people-office-final-mob2x.jpg );;
+  }
 }
 
 .hero-title {
@@ -475,7 +483,7 @@ p {
 }
 
 .examples-list {
-  display: flex;
+  display: none;
   margin-top: 72px;
   justify-content: space-evenly;
   gap: 24px;
@@ -676,17 +684,34 @@ p {
 
 /* Footer */
 .footer-section {
+  position: relative;
   background-color: var(--background-color-footer);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 97.5px;
+  padding-bottom: 545.5px;
+
+  
+  width: 100%;
+  max-width: 428px;
+  height: 664px;
+  
 }
 
+
+
 .logo-footer {
+  display: inline-block;
   text-decoration: none;
+  justify-content: start;
+  
 }
 
 .logodescript {
-  display: flex;
+  top: 96px;
+  position: absolute;
+  left: 80px;
+  right: 80px;
+
+  
 
 }
 
@@ -696,6 +721,7 @@ p {
   font-size: 18px;
   line-height: 1.3em;
   color: var(--logo-text-color-fp);
+  
 }
 
 .footer-description {
@@ -703,19 +729,27 @@ p {
   font-size: 16px;
   line-height: 1.5em;
   color: var(--footer-text-color);
-  margin-top: 16px;
+  margin-top: 17.5px;
+  
+  
   width: 264px;
 }
 
 .social-links {
-  margin-left: 120px;
+  position: absolute;
+  margin-left: 0;
+  top: 280px;
+  bottom: 304px;
+ 
+ 
 }
 
 
 .social-media-title {
-  display: inline-block;
+ 
   color: var(--teamrolecard-background-color);
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .footer-social-media-list {
@@ -723,6 +757,11 @@ p {
   align-items: center;
   justify-content: center;
   gap: 16px;
+
+  
+  
+  
+  
 }
 
 .social-media-link {
@@ -751,6 +790,137 @@ p {
 .social-media-link:hover,
 .social-media-link:focus {
   background-color: var(--footer-sm-links);
+}
+
+.footer-sub {
+  position: absolute;
+}
+
+.footer-sub-title {
+  display: inline-block;
+  color: var(--teamrolecard-background-color);
+  margin-bottom: 16px;
+  ;
+}
+
+.btn-subscribe {
+
+  position: absolute;
+
+  width: 165px;
+  height: 40px;
+  padding: 8px 64px 8px 24px;
+  
+  bottom: 96px;
+  text-align: center;
+
+  cursor: pointer;
+
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5em;
+
+  background: var(--btn-hero-noneactive-bgc);
+  border-radius: 4px;
+  border-color: var(--btn-hero-noneactive-bgc);
+  color: var(--btn-nonactive-bgc);
+
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+}
+
+
+.btn-subscribe:focus,
+.btn-subscribe:hover {
+  color: var(--btn-text-color);
+  background-color: var(--btn-active-bgc);
+
+}
+
+.sub-btn-text {
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  transform: translateY(-50%);
+}
+
+.btn-sub-icon {
+  position: absolute;
+  bottom: 10px;
+  top: 50%;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  transform: translateY(-50%);
+
+  fill: var(--btn-text-color);
+}
+
+
+.footer-form {
+  top: 432px;
+  position: absolute;
+  
+  bottom: 96px ;
+}
+
+.footer-form-field {
+  position: relative;
+  width: 453px;
+  height: 80px;
+
+
+}
+
+.footer-form-input {
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 264px;
+  height: 40px;
+
+
+  color: var(--btn-text-color);
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  opacity: 1;
+  padding-left: 15px;
+  outline: none;
+}
+
+
+
+.footer-form-label {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  bottom: 8px;
+
+
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: var(--background-color-main);
+
+
+}
+
+.footer-form-input:focus+.footer-form-label,
+.footer-form-input:not(:placeholder-shown)+.footer-form-label {
+  opacity: 0;
+}
+
+.footer-form-input:placeholder-shown {
+  color: transparent
 }
 
 
@@ -1038,135 +1208,7 @@ background-color: var(--accent-color);
 
 
 
-.footer-sub {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.footer-sub-title {
-  display: inline-block;
-  color: var(--teamrolecard-background-color);
-  margin-bottom: 16px;
-  ;
-}
-
-.btn-subscribe {
-
-  position: absolute;
-
-  width: 165px;
-  height: 40px;
-  padding: 8px 64px 8px 24px;
-  margin-left: 24px;
-
-  text-align: center;
-
-  cursor: pointer;
-
-
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5em;
-
-  background: var(--btn-hero-noneactive-bgc);
-  border-radius: 4px;
-  border-color: var(--btn-hero-noneactive-bgc);
-  color: var(--btn-nonactive-bgc);
-
-
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color;
-}
-
-
-.btn-subscribe:focus,
-.btn-subscribe:hover {
-  color: var(--btn-text-color);
-  background-color: var(--btn-active-bgc);
-
-}
-
-.sub-btn-text {
-  position: absolute;
-  top: 50%;
-  left: 24px;
-  transform: translateY(-50%);
-}
-
-.btn-sub-icon {
-  position: absolute;
-  bottom: 10px;
-  top: 50%;
-  right: 24px;
-  width: 24px;
-  height: 24px;
-  transform: translateY(-50%);
-
-  fill: var(--btn-text-color);
-}
-
-
-.footer-form {
-  margin-left: 80px;
-}
-
-.footer-form-field {
-  position: relative;
-  width: 453px;
-  height: 80px;
-
-
-}
-
-.footer-form-input {
-  padding-left: 16px;
-  padding-right: 16px;
-  width: 264px;
-  height: 40px;
-
-
-  color: var(--btn-text-color);
-  background-color: transparent;
-  border: 1px solid #FFFFFF;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  opacity: 1;
-  padding-left: 15px;
-  outline: none;
-}
-
-
-
-.footer-form-label {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-  bottom: 8px;
-  
-
-
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 24px;
-  color: var(--background-color-main);
-
-
-}
-
-.footer-form-input:focus+.footer-form-label,
-.footer-form-input:not(:placeholder-shown)+.footer-form-label {
-  opacity: 0;
-}
-
-.footer-form-input:placeholder-shown {
-  color: transparent
-}
 
 /* media for section: Feature */
 
@@ -1182,9 +1224,22 @@ background-color: var(--accent-color);
     max-width: 736px;
   }
     .hero-section{
+      background-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0.7),
+            rgba(46, 47, 66, 0.7)),
+          url(../images/people-office-final-tab.jpg);
       padding-top: 112px;
       padding-bottom: 204px;
     }
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          .hero-section {
+            background-image: url(../images/people-office-final-tab2x.jpg );
+            ;
+          }
+        }
 
      .hero-title {
        width: 100%;
@@ -1234,9 +1289,22 @@ background-color: var(--accent-color);
   }
 
   .hero-section{
+    background-image: linear-gradient(to right,
+          rgba(0, 0, 0, 0.7),
+          rgba(46, 47, 66, 0.7)),
+        url(../images/people-officefinal.jpg);
     padding-top: 188px;
       padding-bottom: 292px;
   }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      .hero-section {
+        background-image: url(../images/peopleoffice-final2x.jpg );
+        ;
+      }
+    }
 
   .container{
     max-width: 1200px;
@@ -1253,4 +1321,24 @@ background-color: var(--accent-color);
   .feature-background{
     opacity: 1;
   }
+
+
+    .image-ex {
+      display: block;
+    }
+  
+    .examples-section {
+      padding-top: 0;
+    }
+  
+    .examples-list {
+      display: flex;
+      margin-top: 72px;
+      justify-content: space-evenly;
+      gap: 24px;
+    }
+  
+    .examples-item {
+      width: 360px;
+    }
 }
