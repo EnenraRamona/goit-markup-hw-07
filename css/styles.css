@@ -125,6 +125,7 @@ p {
 
 
 
+
 .menu-container{
   padding-left: 40px;
   width: 100%;
@@ -1456,7 +1457,7 @@ color: var(--primary-text-color);
 
   }
 
-    .menu-open .menu-open-icon{
+    .menu-open {
       display: none;
     }
 
@@ -1680,6 +1681,10 @@ margin-right: auto;
   .section {
     padding-top: 120px;
     padding-bottom: 120px;
+  }
+
+  .menu-open.menu-open-icon{
+    display: none;
   }
 
   .site-navigation .nav-item {
