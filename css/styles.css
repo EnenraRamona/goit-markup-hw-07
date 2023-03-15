@@ -64,8 +64,43 @@ p {
 }
 
 /* Site Nav */
+.menu-open {
+  position: absolute;
+  box-sizing: border-box;
 
-.mob-menu {
+  right: 24px;
+  top: 24px;
+
+  width: 100%;
+  max-width: 32px;
+  height: 32px;
+  background-color: transparent;
+
+
+
+  outline: none;
+  border-color: transparent;
+
+  cursor: pointer;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+  background-color;
+  
+}
+
+
+
+.menu-open-icon {
+
+  stroke: #2e2f42;
+  width: 32px;
+  height: 22px;
+
+}
+
+.menu {
   
   position:fixed;
   top: 0;
@@ -77,6 +112,15 @@ p {
   max-height: 796px ;
   background-color: var(--background-color-main);
   overflow-y: scroll;
+  opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.menu.is-open{
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
 }
 
 .menu-container{
@@ -84,6 +128,35 @@ p {
   width: 100%;
   max-width: 428px;
   margin: 0;
+}
+
+
+.menu-close{
+  display: block;
+    box-sizing: border-box;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    width: 24px;
+    height: 24px;
+  
+  
+  
+  
+  
+  
+    background: #E7E9FC;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+  
+    color: black;
+  
+    cursor: pointer;
+  
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill;
+    background-color;
 }
 
 .mob-menu-nav-list {
@@ -223,37 +296,7 @@ p {
 
 
 
-.menu-open{
-    position: absolute;
-    box-sizing: border-box;
-      
-      right: 24px;
-      top: 24px;
-   
-    width: 100%;
-    max-width: 32px;
-    height: 32px;
-    background-color: transparent;
-    
-    
-    
-    outline: none;
-    border-color: transparent;
-  
-    cursor: pointer;
-  
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: fill;
-    background-color;}
 
-.menu-open-icon{
-  
- stroke: #2e2f42;
- width: 32px;
- height: 22px;
- 
-}
 
 .link {
   display: none;
