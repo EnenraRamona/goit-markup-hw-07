@@ -123,6 +123,8 @@ p {
   pointer-events: initial;
 }
 
+
+
 .menu-container{
   padding-left: 40px;
   width: 100%;
@@ -180,9 +182,16 @@ p {
   line-height: calc(40px / 36px);
   text-decoration: none;
   color: var(--primary-text-color);
+    transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      ;
+      transition-property: color;
   
 }
 
+.mob-menu-link:is(:hover, :focus){
+  color: var(--btn-hero-noneactive-bgc);
+}
 
 
 .mob-menu-contacts-list {
@@ -199,7 +208,15 @@ p {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: calc(40px / 36px);}
+  line-height: calc(40px / 36px);
+  text-decoration: none;
+color: var(--primary-text-color);
+  transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    ;
+    transition-property: color;
+}
+  
   
 
   
@@ -210,8 +227,19 @@ p {
   font-size: 20px;
   line-height: calc(24px/ 20px);
   text-decoration: none;
-  color: var(--primary-text-color);}
+  color: var(--primary-text-color);
+         transition-duration: 250ms;
+         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+         ;
+         transition-property: color;}
   
+.menu-tel:is(:hover, :focus){
+  color: var(--btn-hero-noneactive-bgc);
+}
+
+.menu-mail:is(:hover,:focus){
+  color: var(--btn-hero-noneactive-bgc);
+}
 
 .mob-menu-social-media-list {
  display: flex;
@@ -248,7 +276,10 @@ p {
 }
 
 
-
+.mob-social-media-link:hover,
+.mob-social-media-link:focus {
+  background-color: var(--btn-active-bgc);
+}
 
 
 
