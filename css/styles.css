@@ -107,7 +107,8 @@ p {
   padding-top: 80px;
   padding-bottom: 40px;
   width: 100%;
-  max-width: 767px;
+  max-width: 428px;
+  
   height: 100%;
   
   background-color: var(--background-color-main);
@@ -139,7 +140,7 @@ p {
   padding-left: 40px;
   width: 100%;
   max-width: 428px;
-  margin: 0;
+ 
 }
 
 
@@ -254,8 +255,11 @@ color: var(--primary-text-color);
 .mob-menu-social-media-list {
  display: flex;
  align-items: center;
- justify-content: space-around;
+ margin-right: 40px;
+ width: 100%;
+flex-wrap: wrap;
  gap: 56px;
+
 }
 
 .mob-social-media-item {
@@ -1432,6 +1436,7 @@ color: var(--primary-text-color);
 @media srceen and (min-width:480px) {
   .container {
     max-width: 428px;
+    
   }
 
   
@@ -1442,6 +1447,7 @@ color: var(--primary-text-color);
 @media screen and (min-width:768px) {
   .container {
     max-width: 736px;
+   
   }
 
   .site-navigation .nav-item {
@@ -1657,32 +1663,74 @@ color: var(--primary-text-color);
     max-width: 360px;
   }
 
-.footer-form{
-display: block;
-width: 100%;
-margin-right: auto;
-}
+
+    .logodescript {
+      flex-wrap: wrap;
+      gap: unset;
+    }
+
+ .footer-logo-descript {
+   margin: unset;
+   
+ }
+
+ .social-links{
+  margin: 0;
+ }
+
+ .footer-social-media-list{
+  margin-left: 24px;
+ }
+
+ .footer-form {
+   margin-top: 72px;
+   margin-left: 0;
+   margin-right: 0;
+ }
 
 
 
-.footer-form-input{
+ .footer-form-field {
+   display: flex;
 
-  max-width: 246px;
-  
-}
+
+   justify-content: center;
+   gap: 24px;
+ }
+
+ .footer-form-input {
+   display: inline-block;
+   margin: 0;
+ }
+
+ .footer-form-label {
+   display: flex;
+
+   justify-content: center;
+
+ }
+
+ .btn-subscribe {
+   display: inline-block;
+   align-items: baseline;
+   margin: unset;
+   width: 100%;
+   max-width: 165px;
+
+ }
+
+
 
 .footer-sub-title {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   color: var(--teamrolecard-background-color);
   margin-bottom: 16px;
 }
 
 
-.btn-subscribe{
-  
-}
+
 
 .modal{
   width: 100%;
@@ -1697,7 +1745,10 @@ margin-right: auto;
   .section {
     padding-top: 120px;
     padding-bottom: 120px;
+   
   }
+
+ 
 
   .menu-open.menu-open-icon{
     display: none;
@@ -1897,10 +1948,6 @@ margin-right: auto;
   }
 
 
-  .logodescript{
-    flex-wrap: nowrap;
-    gap: unset;
-  }
 
 
      .footer-logo-descript {
@@ -1911,6 +1958,7 @@ margin-right: auto;
 
      .footer-form{
     margin-left: 80px;
+    margin-top: 0;
      }
 
      .footer-sub-title{
