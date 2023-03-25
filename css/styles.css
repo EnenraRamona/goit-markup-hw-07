@@ -1047,7 +1047,7 @@ flex-wrap: wrap;
   width: 100%;
   max-width: 360px;
   height: 40px;
-  border: 1px solid var(--background-color-footer);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
 
@@ -1115,7 +1115,7 @@ flex-wrap: wrap;
   font-size: 12px;
   line-height: 14px;
 
-  border: 1px solid var(--background-color-footer);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   resize: none;
   transition-duration: 250ms;
