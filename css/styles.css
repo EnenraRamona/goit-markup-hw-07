@@ -112,7 +112,7 @@ p {
 
 
   height: 100%;
-  min-height: 796px;
+  
 
   background-color: var(--background-color-main);
 
@@ -123,7 +123,7 @@ p {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 2;
-
+  overflow-y: scroll;
 }
 
 .menu {
@@ -143,13 +143,15 @@ p {
 
 
 .menu-container {
+  display: flex;
+  flex-direction: column;
   padding-left: 40px;
   width: 100%;
   max-width: 428px;
   height: 100%;
-  min-height: 500px;
-  overflow-y: scroll;
-  overflow-x: unset;
+  
+ 
+ 
 
 }
 
@@ -175,6 +177,7 @@ p {
   color: black;
 
   cursor: pointer;
+  flex-shrink: 2;
 
 
 
@@ -200,7 +203,7 @@ p {
 .mob-menu-nav-list {
 
   padding: 0;
-  margin-bottom: 284px;
+  margin-bottom: auto;
   list-style: none;
   
 
@@ -238,6 +241,7 @@ p {
   list-style: none;
   padding: 0;
   margin-bottom: 48px;
+  margin-top: auto;
 }
 
 .mob-contact-item:not(:last-child) {
@@ -291,7 +295,7 @@ p {
   
   max-width: 428px;
 
-  min-height: 448px;
+ 
   flex-wrap: wrap;
 
 
@@ -1008,7 +1012,7 @@ p {
   width: 100%;
 
   max-width: 392px;
-
+  height: 100%;
   max-height: 586px;
 
 
@@ -1249,7 +1253,7 @@ p {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: fill;
-  background-color;
+ flex-shrink: 2;
 
 }
 
@@ -2052,6 +2056,16 @@ p {
 
   .examples-item {
     width: 360px;
+  }
+
+
+  .customers{
+    padding: 0;
+    padding-bottom: 100px;
+  }
+
+  .customer-link{
+    margin-bottom: 0;
   }
 
 
