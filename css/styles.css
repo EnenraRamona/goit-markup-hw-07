@@ -635,11 +635,13 @@ p {
 
 
 .feature-list .title {
-  color: var(--primary-text-color);
-  font-size: 20px;
-  line-height: 1.2em;
-  text-align: center;
-  font-weight: 700;
+  font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+      color: var(--primary-text-color);
 }
 
 .feature-description {
@@ -647,10 +649,10 @@ p {
   color: var(--description-text-color);
   font-size: 16px;
   line-height: 1.5em;
-  letter-spacing: 0.02em;
+  
   margin-top: 8px;
 
-  font-weight: 500;
+  font-weight: 400;
 
 }
 
@@ -833,6 +835,8 @@ p {
 .customer-link {
 
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 16px;
   margin-bottom: 72px;
   padding: 16px 40px;
@@ -853,8 +857,10 @@ p {
 
 
 .customer-icon {
-  width: 104px;
-  height: 56px;
+  width: 100%;
+  min-width: 104px;
+  height: 100%;
+  min-height: 56px;
   fill: var(--customer-icon-color);
 }
 
@@ -1146,6 +1152,7 @@ p {
 
 .check-text {
   display: flex;
+  align-items: center;
   width: 100%;
   max-width: 360px;
   margin-top: 16px;
@@ -1159,7 +1166,7 @@ p {
 }
 
 .check-text::before {
-
+ 
   border: 1px solid var(--background-color-footer);
 
   border-radius: 2px;
@@ -1168,6 +1175,7 @@ p {
   height: 16px;
   margin-right: 8px;
   margin-top: -1px;
+  cursor: pointer;
 }
 
 .input-check:checked+.check-text::before {
@@ -1210,6 +1218,7 @@ p {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: var(--btn-hero-noneactive-bgc);
+  border-style: none;
   color: var(--btn-text-color);
   cursor: pointer;
 
@@ -1685,7 +1694,13 @@ p {
 
 
   .feature-list .title {
-    text-align: unset;
+  
+    font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 40px;
+        text-align:left ;
   }
 
   .feature-item {
@@ -2001,9 +2016,7 @@ p {
     }
   }
 
-  .feature-description {
-    font-weight: 400;
-  }
+  
 
   .feature-list .title {
     font-weight: 500;
