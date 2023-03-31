@@ -1348,9 +1348,13 @@ p {
   opacity: 1;
   padding-left: 15px;
   outline: none;
+  
 
 }
 
+::placeholder{
+  color:white;
+}
 
 
 
@@ -1481,14 +1485,7 @@ p {
   fill: var(--btn-text-color);
 }
 
-.footer-form-input:focus+.footer-form-label,
-.footer-form-input:not(:placeholder-shown)+.footer-form-label {
-  opacity: 0;
-}
 
-.footer-form-input:placeholder-shown {
-  color: transparent
-}
 
 /* media for section: Feature */
 
